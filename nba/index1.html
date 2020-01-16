@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .bannerCon{
+        overflow: hidden;
+        width:500px;
+        position:relative;
+        margin: 100px auto;
+    }
+    .bannerContainer{
+        position:relative;
+    }
+    .bannerContainer li{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .bannerContainer li img{
+        width:500px;
+    }
+    .bannerTip{
+        position:absolute;
+        top:600px;
+        left:0;
+        width:100%;
+        z-index: 1;
+    }
+    .bannerTip .bannerUL{
+        margin:0 auto;
+        width:100%;
+        text-align: center;
+    }
+    .bannerTip .bannerUL li{
+        display: inline-block;
+        margin-right:20px;
+        border-radius:50%;
+        width:16px;
+        height:16px;
+        background-color:rgba(0,0,0,0.3);
+    }
+    .bannerTip .bannerUL li.activeLi{
+        width:52px;
+        border-radius: 8px;
+        background-color:#fff;
+    }
+</style>
+<body>
+
+<div class='bannerCon'>
+    <ul class="bannerContainer" id="bannerContainer">
+        <li class="banner"><img src="images/curry.jfif" alt=""></li>
+        <li class="banner"><img src="images/kely.jpg" alt=""></li>
+        <li class="banner"><img src="images/curry.jfif" alt=""></li>
+        <li class="banner"><img src="images/curry.jfif" alt=""></li>
+        <li class="banner"><img src="images/lsr.jfif" alt="" ></li>
+    </ul>
+    <div class="bannerTip">
+        <ul class="bannerUL" id="bannerTip"></ul>
+    </div>
+</div>
+
+
+<script src="jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        let childNum=$('#bannerContainer').children('li').length;//获取子节点个数
+        let listWidth=500*childNum;
+        $("#bannerContainer li").css('width',500);//设置li的宽
+        $("#bannerContainer").css('width',500);//设置ul的宽
+//根据图片张数创建小图标
+
+
+        // 获取第一张图片的节点对象
+        let firstImg = $('#bannerContainer li').first().clone();
+        childNum=childNum+1;
+// 添加到最后的位置 并设置 ul 的宽度
+        $('#bannerContainer').append(firstImg).width(childNum * 500);
+        let i = 0;
+        let timer;
+
+// 移动图片
+        function moveImg() {
+
+            // 最后一张
+            if (i === childNum) {
+                $('#bannerContainer').css({
+                    left: 0
+                });
+                i = 1;
+                // console.log('最后一张')
+            }
+
+
+            // 移动图片动画
+
+
+
+            $('#bannerContainer').stop().animate({
+                left:  i* -500
+            }, 3000,"linear");
+
+            // // 换一下每个图片的小标记
+        }
+
+
+
+//自动播放
+        function autoPlay() {
+            timer = setInterval(function() {
+                console.log(i)
+                i++;
+                moveImg();
+            }, 3000);
+        }
+
+        autoPlay();
+
+// 鼠标移入幻灯片清除定时器
+        $('#bannerContainer').mouseover(function() {
+            clearInterval(timer);
+            $('#bannerContainer').stop();
+        }).mouseout(function() {
+            // 鼠标离开重新播放
+            autoPlay();
+        })
+
+    });
+</script>
+
+</body>
+</html>

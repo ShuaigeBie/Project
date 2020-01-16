@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-layout">
+        <div class="wrap">
+            <ul class="site-nav">
+                <li class="fl nba-logo">
+                    <a href="">NBA中国官方网站</a>
+                </li>
+                <li class="fr nba-login">
+                    <a href="">金州勇士官方微博</a>
+                </li>
+            </ul>
+            <div class="team-nav"></div>
+            <div class="team-inf">
+                <div class="fl team-logo">
+                    <p>
+                        <span class="regular">常规赛&nbsp;&nbsp;1胜 - 2负</span><span class="rank">西部第11名</span>
+                    </p>
+                    <p><a href="#" style="color: #fff;" target="_blank">English</a></p>
+                </div>
+                <ul class="fr team-match">
+                    <li>
+                        <span>主教练</span>
+                        <em></em>
+                    </li>
+                    <li>
+                        <span>分区</span>
+                        <em>西部 | 太平洋分区</em>
+                    </li>
+                    <li>
+                        <span>球馆</span>
+                        <em>奥克兰体育馆</em>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        </div>
+    <div class="team-nav">
+        <ul class="nav-list wrap">
+            <li><a href="#" target="_blank">首页</a></li>
+            <li><a href="curry.html">球员</a></li>
+            <li><a href="mailto:1045146443@qq.com">联系我们</a></li>
+            <li><a href="https://baike.baidu.com/item/%E9%87%91%E5%B7%9E%E5%8B%87%E5%A3%AB%E9%98%9F/3694353?fromtitle=%E9%87%91%E5%B7%9E%E5%8B%87%E5%A3%AB&fromid=11157137&fr=aladdin">关于更多</a></li>
+        </ul>
+    </div>
+    </div>
+<div class="main-content">
+    <div class="wrap clearfix">
+        <div class="chief">
+            <div class="scro">
+                <ul  >
+                    <li><a href=""><img src="images/150658143.jpg" alt=""></a></li>
+                    <li style="display: none"><a href=""><img src="images/lb2.jpg" alt=""></a></li>
+                    <li style="display: none"><a href=""><img src="images/lb3.jpg" alt=""></a></li>
+                </ul>
+                <div class="arrow">
+                    <span class="arrow-left"><</span>
+                    <span class="arrow-right">> </span>
+                </div>
+
+                <!--                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拉塞尔23+3库里缺阵 勇士不敌湖人两连败</h3>-->
+            </div>
+
+            <script src="jquery-1.12.4.js"></script>
+            <script>
+                $(function () {
+                    var count = 0;
+                    $(".arrow-right").click(function aa() {
+                        count++;
+
+                        if (count == $(".scro li").length) {
+                            count = 0;
+                        }
+                        $(".scro li").eq(count).show().siblings("li").hide();
+                    });
+                    $(".arrow-left").click(function () {
+                        count--;
+                        if (count == -1) {
+                            count = $(".scro li").length - 1;
+                        }
+                        console.log(count)
+                        $(".scro li").eq(count).show().siblings("li").hide();
+
+                    })
+
+                function lunbo_time() {
+                        timeId = setInterval(function () {
+                            $(".scro li").eq(count).css("display","block").siblings("li").css("display","none");
+                            count++;
+                            if (count == 3){
+                                count = 0
+                            };
+                        },2000);
+
+
+                };
+                    lunbo_time();
+
+                    $(".scro li").mouseenter(function () {
+                        clearTimeout(timeId);
+                    }).mouseleave(function () {
+                        lunbo_time();
+                    });
+                });
+
+
+            </script>
+
+            <div class="new-title">
+                <h2><a href="">球队历史</a></h2>
+                <div class="new-posi" style="height: 180px">
+                    <div class="new" style="height: 139px;">
+                        <a href="">
+                            <dl style="height: 170px">
+                                <dt class="fl"><span style="height: 140px" ><img src="images/9e3df8dcd100baa18fe6019e4810b912c9fc2ec8.jpg" alt="" style="height: 140px"></span></dt>
+                                <dd class="fr"><p class="txt-con">1946年，球队诞生于费城，故队名为“费城武士队”，是为表达对美国独立战争中牺牲的勇士的一种敬意。1962年移师旧金山后改为“金州勇士队”。现在，随着小球战术的发展，并且其球队的当家球星斯蒂芬 库里恐怖的三分火力，金州勇士现在已经在四年内获得了三个NBA总冠军，最令人敬畏的是，他们的时代才刚刚开始。</p></dd>
+                            </dl>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="new-title">
+                <h2><a href="">球队核心--斯蒂芬 库里</a></h2>
+                <div class="new-posi" style="height: 180px">
+                    <div class="new" style="height: 139px;">
+                        <a href="">
+                            <dl style="height: 170px">
+                                <dt class="fl"><span><img src="images/curry.jfif" alt=""></span></dt>
+                                <dd class="fr"><p class="txt-con">斯蒂芬·库里（Stephen Curry），1988年3月14日出生于美国俄亥俄州阿克伦（Akron,Ohio），美国职业篮球运动员，司职控球后卫，效力于NBA金州勇士队。 [1]
+                                    斯蒂芬·库里于2009年通过选秀进入NBA后一直效力于勇士队，新秀赛季入选最佳新秀第一阵容；2014-15、2016-17、2017-18赛季三次获得NBA总冠军；两次荣膺常规赛MVP，6次入选最佳阵容（3次一阵、2次二阵、1次三阵），6次入选全明星赛西部首发阵容。</p></dd>
+                            </dl>
+                        </a>
+
+                    </div>
+                </div>
+
+                </div>
+            <div class="new-title">
+                <h2><a href="">球队核心--克莱 汤普森</a></h2>
+                <div class="new-posi" style="height: 180px">
+                    <div class="new" style="height: 139px;">
+                        <a href="">
+                            <dl style="height: 170px">
+                                <dt class="fl"><span><img src="images/kely.jpg" alt=""></span></dt>
+                                <dd class="fr"><p class="txt-con">克莱·汤普森（Klay Thompson），1990年2月8日出生于美国加利福尼亚州洛杉矶（Los Angeles,California），美国职业篮球运动员，司职得分后卫，效力于NBA金州勇士队。
+                                    克莱·汤普森于2011年通过选秀进入NBA，新秀赛季入选最佳新秀阵容第一阵容；2014-15、2016-17、2017-18赛季三次随勇士队夺得NBA总冠军；2次入选最佳阵容第三阵容；2018-19赛季入选最佳防守阵容第二阵容；5次入选全明星阵容。</p></dd>
+                            </dl>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="new-title">
+                <h2><a href="">球队核心--德安吉洛·拉塞尔</a></h2>
+                <div class="new-posi" style="height: 180px">
+                    <div class="new" style="height: 139px;">
+                        <a href="">
+                            <dl style="height: 170px">
+                                <dt class="fl"><span><img src="images/lsr.jfif" alt=""></span></dt>
+                                <dd class="fr"><p class="txt-con">德安吉洛·拉塞尔（D'Angelo Russell），1996年2月23日出生于美国肯塔基州路易斯维尔（Louisville, KY），美国职业篮球运动员，司职控球后卫/得分后卫，效力于NBA金州勇士队。
+                                    德安吉洛·拉塞尔于2015年以选秀榜眼身份进入NBA，先后效力于湖人队、篮网队以及勇士队，新秀赛季入选最佳新秀阵容第二阵容，2018-19赛季入选全明星东部替补阵容。</dl>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="new-title">
+                <h2><a href="">最新资讯</a></h2>
+                <div class="new-list">
+                    <div class="new-warp">
+                        <div>
+                            <div class="new-posi">
+                                <div class="new">
+                                    <a href="">
+                                        <h3 class="new-hd">詹姆斯18+11戴维斯8+10 湖人轻取勇士两连胜</h3>
+                                        <dl>
+                                            <dt class="fl"><span><img src="images/150664928.jpg" alt=""></span></dt>
+                                            <dd class="fr"><p class="txt-con">北京时间10月17日，NBA季前赛再战一场，湖人主场126-93轻取勇士，迎来两连胜。湖人队詹姆斯18分4篮板...</p></dd>
+                                        </dl>
+                                    </a>
+                                    <p><span class="fl" data-time="2019-10-17 13:02:11">2019-10-17 13:02</span>
+                                        <span class="fr" data-article_id="20191017005266">评论(0)</span></p>
+                                </div>
+                            </div>
+                            <div class="new-posi">
+                                <div class="new">
+                                    <a href="">
+                                        <h3 class="new-hd">季前赛：勇士93-126湖人 图集</h3>
+                                        <img src="images/150664929.jpg" alt="" style="width: 638px;height: 105px">
+                                    </a>
+                                    <p><span class="fl" data-time="2019-10-17 13:02:11">2019-10-17 13:02</span>
+                                        <span class="fr" data-article_id="20191017005266">评论(0)</span></p>
+                                </div>
+                            </div>
+                            <div class="new-posi">
+                                <div class="new">
+                                    <a href="">
+                                        <h3 class="new-hd">科尔：德雷蒙德-格林需要在防守端做出改变</h3>
+                                        <dl>
+                                            <dt class="fl">
+                                                <span><img src="http://img1.gtimg.com/chinanba/pics/hv1/149/6/2317/150664604.jpg"></span><em></em>
+                                            </dt>
+                                            <dd class="fr txt-chart"><p class="txt-con">北京时间10月17日，据ClutchPoints报道，勇士队主教练史蒂夫-科尔在接受采访时表示，新赛季球队将对队中的防守中坚德雷蒙德-格林有不同的要求。勇士队在休赛期失去了凯文-
+                                                ...
+                                            </p></dd>
+                                        </dl>
+                                    </a>
+                                    <p><span class="fl" data-time="2019-10-17 13:02:11">2019-10-17 13:02</span>
+                                        <span class="fr" data-article_id="20191017005266">评论(0)</span></p>
+                                </div>
+                            </div>
+                            <div class="new-posi">
+                                <div class="new">
+                                    <a href="">
+                                        <h3 class="new-hd">缺席剩余季前赛 卢尼或赶上常规赛揭幕战</h3>
+                                        <dl class="new-bd ch">
+                                            <dt class="fl">
+                                                <span><img src="http://img1.gtimg.com/chinanba/pics/hv1/201/241/2316/150659556.jpg"></span><em></em>
+                                            </dt>
+                                            <dd class="fr txt-chart"><p class="txt-con">北京时间10月16日，NBC消息，因为拉伤腿筋，勇士内线凯文-卢尼已经休战许久。勇士队希望，他能赶上新赛季跟快船的常规赛揭幕战。卢尼是在两周前受伤的，一直休战至今。今夏多位老将离
+                                                ...
+                                            </p></dd>
+                                        </dl>
+                                    </a>
+                                    <p><span class="fl" data-time="2019-10-17 13:02:11">2019-10-17 13:02</span>
+                                        <span class="fr" data-article_id="20191017005266">评论(0)</span></p>
+                                </div>
+                            </div>
+                            <div class="new-posi">
+                                <div class="new">
+                                    <a href="">
+                                        <h3 class="new-hd">科尔：库里仍处在生涯巅峰 新赛季期待不减</h3>
+                                        <dl class="new-bd ch">
+                                            <dt class="fl">
+                                                <span><img src="http://img1.gtimg.com/chinanba/pics/hv1/109/239/2316/150658954.jpg"></span><em></em>
+                                            </dt>
+                                            <dd class="fr txt-chart"><p class="txt-con">北京时间10月15日，勇士主帅史蒂夫-科尔在接受采访时谈到了库里当前的竞技状态。在科尔看来，已满31岁的库里仍处于生涯巅峰期。当被问到对新赛季的库里有何期待时，科尔的回答很简单：
+                                                ...
+                                            </p></dd>
+                                        </dl>
+                                    </a>
+                                    <p><span class="fl" data-time="2019-10-17 13:02:11">2019-10-17 13:02</span>
+                                        <span class="fr" data-article_id="20191017005266">评论(0)</span></p>
+                                </div>
+                            </div>
+                            <div class="new-posi">
+                                <div class="new">
+                                    <a href="">
+                                        <h3 class="new-hd">视频-湖人104-98勇士 集锦</h3>
+                                        <dl class="new-bd ch">
+                                            <dt class="fl">
+                                                <span><img src="http://img1.gtimg.com/chinanba/pics/hv1/136/238/2316/150658726.jpg"></span><em class="video icon"></em>
+                                            </dt>
+                                            <dd class="fr txt-chart"><p class="txt-con">北京时间10月15日，NBA季前赛再战一场，湖人主场104-98力克勇士，结束了两连败。湖人队多名主力休战，霍华德12分13篮板6助攻4抢断，小扎克-诺维尔22分4篮板，大卫-斯
+                                                ...
+                                            </p></dd>
+                                        </dl>
+                                    </a>
+                                    <p><span class="fl" data-time="2019-10-17 13:02:11">2019-10-17 13:02</span>
+                                        <span class="fr" data-article_id="20191017005266">评论(0)</span></p>
+                                </div>
+                            </div>
+                            <div class="new-posi">
+                                <div class="new">
+                                    <a href="">
+                                        <h3 class="new-hd">霍华德12+13库里17+3 湖人主场力克勇士</h3>
+                                        <dl class="new-bd ch">
+                                            <dt class="fl">
+                                                <span><img src="http://img1.gtimg.com/chinanba/pics/hv1/58/236/2316/150658138.jpg"></span><em></em>
+                                            </dt>
+                                            <dd class="fr txt-chart"><p class="txt-con">北京时间10月15日，NBA季前赛再战一场，湖人主场104-98力克勇士，结束了两连败。湖人队多名主力休战，霍华德12分13篮板6助攻4抢断，小扎克-诺维尔22分4篮板，大卫-斯
+                                                ...
+                                            </p></dd>
+                                        </dl>
+                                    </a>
+                                    <p><span class="fl" data-time="2019-10-17 13:02:11">2019-10-17 13:02</span>
+                                        <span class="fr" data-article_id="20191017005266">评论(0)</span></p>
+                                </div>
+                            </div>
+
+
+                                <a href="" class="load-btn">点击加载更多</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="extra">
+            <div class="box">
+                <div class="mod-title">
+                    <a href="">自我介绍</a>
+                </div>
+                <div class="mod-content" style="overflow: hidden;position: relative">
+                    <ul id="container" style="width: 312px;height: 500px;position: relative">
+                        <li style="height: 1000px;">
+                            <div style="background: #1e518c;height: 500px"></div>
+                            <div style="background: pink;height: 500px"></div>
+                            <div style="background: #1e518c;height: 500px"></div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <script src="jquery-1.12.4.js"></script>
+                <script>
+                    $(function () {
+
+                        i = 0;
+                        function move() {
+                            if (i===3) {
+
+                                $("#container").css({top:0});
+                                i=1;
+                            }
+
+                        $("#container").stop().animate({top: i * -500 },3000,"linear");
+                        }
+
+
+
+                        function auto() {
+                            timer=setInterval(function () {
+                             i++;
+                             move();
+                            },3000)
+                        }
+                        auto();
+
+
+
+
+                        $("#container").mouseenter(function () {
+                            clearInterval(timer);
+
+                            $('#container').stop();
+                            console.log(i+"======11111");
+                        }).mouseleave(
+                            function () {
+                              auto();
+                                console.log(i+"========2222");
+                              temp = i ;
+                                i--;
+                              if (i<=0){
+                                  i=temp;
+                              }
+
+                                console.log(i);
+
+
+                            }
+                        );
+                    });
+                    
+                    
+                </script>
+
+            </div>
+            <div class="box">
+                <div class="mod-title">
+                    <a href="">球队赛程</a>
+                </div>
+                <div class="mod-content">
+                    <table cellpadding="0" cellspacing="0" class="schedule-head">
+                        <tbody><tr>
+                            <th width="26%">日期</th>
+                            <th width="16%">时间</th>
+                            <th width="20%">对手</th>
+                            <th width="12%">结果</th>
+                            <th width="26%">比分</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table cellpadding="0" cellspacing="0" class="schedule-body">
+                        <tbody>
+                        <tr>
+                            <td width="26%">10月06日</td>
+                            <td width="16%">08:00</td>
+                            <td width="20%"><a href="/lakers" target="_blank">湖人</a></td>
+                            <td width="12%">负</td>
+                            <td width="26%" class="lf">101-123</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月11日</td>
+                            <td width="16%">10:30</td>
+                            <td width="20%"><a href="/timberwolves" target="_blank">森林狼</a></td>
+                            <td width="12%">胜</td>
+                            <td width="26%" class="lf">143-123</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月15日</td>
+                            <td width="16%">10:30</td>
+                            <td width="20%"><a href="/lakers" target="_blank">湖人</a></td>
+                            <td width="12%">负</td>
+                            <td width="26%" class="lf">98-104</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月17日</td>
+                            <td width="16%">10:30</td>
+                            <td width="20%"><a href="/lakers" target="_blank">湖人</a></td>
+                            <td width="12%">负</td>
+                            <td width="26%" class="lf">93-126</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月19日</td>
+                            <td width="16%">10:30</td>
+                            <td width="20%"><a href="/lakers" target="_blank">湖人</a></td>
+                            <td width="12%">-</td>
+                            <td width="26%">-</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月25日</td>
+                            <td width="16%">10:30</td>
+                            <td width="20%"><a href="/clippers" target="_blank">快船</a></td>
+                            <td width="12%">-</td>
+                            <td width="26%">-</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月28日</td>
+                            <td width="16%">03:30</td>
+                            <td width="20%"><a href="/thunder" target="_blank">雷霆</a></td>
+                            <td width="12%">-</td>
+                            <td width="26%">-</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月29日</td>
+                            <td width="16%">08:00</td>
+                            <td width="20%"><a href="/pelicans" target="_blank">鹈鹕</a></td>
+                            <td width="12%">-</td>
+                            <td width="26%">-</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">10月31日</td>
+                            <td width="16%">10:30</td>
+                            <td width="20%"><a href="/suns" target="_blank">太阳</a></td>
+                            <td width="12%">-</td>
+                            <td width="26%">-</td>
+                        </tr>
+                        <tr>
+                            <td width="26%">11月02日</td>
+                            <td width="16%">10:30</td>
+                            <td width="20%"><a href="/spurs" target="_blank">马刺</a></td>
+                            <td width="12%">-</td>
+                            <td width="26%">-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="all">
+                        <a href="">查看全部</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box b2">
+                <h2>技术统计</h2>
+                <div class="t-content" >
+                    <ul>
+                        <li>
+                            <span>场均得分</span>
+                            <strong>115.9</strong>
+                            <span>联盟第1</span>
+                        </li>
+                        <li>
+                            <span>场均失分</span>
+                            <strong>104.3</strong>
+                            <span>联盟第11</span>
+                        </li>
+                        <li>
+                            <span>场均篮板</span>
+                            <strong>44.4</strong>
+                            <span>联盟第7</span>
+                        </li>
+                        <li>
+                            <span>场均抢断</span>
+                            <strong>9.57</strong>
+                            <span>联盟第1</span>
+                        </li>
+                        <li>
+                            <span>场均助攻</span>
+                            <strong>30.4</strong>
+                            <span>联盟第1</span>
+                        </li>
+                        <li>
+                            <span>场均失误</span>
+                            <strong>14.77</strong>
+                            <span>联盟第9</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="data">
+                <h2>数据王</h2>
+                <ul>
+                    <li>
+                        <h3>得分</h3>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="name">斯蒂芬 库里</td>
+                                <td class="con">场均<strong class="red">25.0</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="name">乔丹 贝尔</td>
+                                <td class="con">场均<strong class="red">14.7</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="name">克雷 汤普森</td>
+                                <td class="con">场均<strong class="red">14.0</strong></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li>
+                        <h3>篮板</h3>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="name">马奎斯 克里斯</td>
+                                <td class="con">场均<strong class="red">9.3</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="name">追梦 格林</td>
+                                <td class="con">场均<strong class="red">6.0</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="name">阿方索 麦基尼</td>
+                                <td class="con">场均<strong class="red">5.7</strong></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <h3>助攻</h3>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="name">追梦 格林</td>
+                                <td class="con">场均<strong class="red">5.5</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="name">马奎斯 克里斯</td>
+                                <td class="con">场均<strong class="red">4.0</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="name">斯蒂芬 库里</td>
+                                <td class="con">场均<strong class="red">3.7</strong></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="mod-chart">
+                <div class="title">
+                    <h2><a href="">NBA排行榜</a></h2>
+                </div>
+                <div class="tab">
+                    <li class="tab-bank">西部</li>
+                    <li class="tab-bank">东部</li>
+                </div>
+                <div class="wrap">
+                    <div class="tabView">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td width="15%" class="t">排名</td>
+                                <td width="20%" class="t">球队</td>
+                                <td width="16%" class="t">胜</td>
+                                <td width="16%" class="t">负</td>
+                                <td width="16%" class="t">胜率</td>
+                                <td width="17%" class="t">胜差</td>
+                            </tr>
+                            <tr>
+                                <td><span>1</span></td>
+                                <td><a target="_blank" href="/sixers">76人</a></td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>100%</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><span>2</span></td>
+                                <td><a target="_blank" href="/bucks">雄鹿</a></td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>100%</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><span>3</span></td>
+                                <td><a target="_blank" href="/celtics">凯尔特人</a></td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>100%</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><span>4</span></td>
+                                <td><a target="_blank" href="/heat">热火</a></td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>100%</td>
+                                <td>0.5</td>
+                            </tr>
+                            <tr>
+                                <td><span>5</span></td>
+                                <td><a target="_blank" href="/nets">篮网</a></td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>100%</td>
+                                <td>0.5</td>
+                            </tr>
+                            <tr>
+                                <td><span>6</span></td>
+                                <td><a target="_blank" href="/pacers">步行者</a></td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>75%</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><span>7</span></td>
+                                <td><a target="_blank" href="/magic">魔术</a></td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>60%</td>
+                                <td>1.5</td>
+                            </tr>
+                            <tr>
+                                <td><span>8</span></td>
+                                <td><a target="_blank" href="/pistons">活塞</a></td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>60%</td>
+                                <td>1.5</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><a target="_blank" href="/wizards">奇才</a></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>50%</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><a target="_blank" href="/knicks">尼克斯</a></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>33.3%</td>
+                                <td>2.5</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><a target="_blank" href="/raptors">猛龙</a></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>33.3%</td>
+                                <td>2.5</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><a target="_blank" href="/bulls">公牛</a></td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>25%</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><a target="_blank" href="/hawks">老鹰</a></td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>25%</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><a target="_blank" href="/cavaliers">骑士</a></td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>25%</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><a target="_blank" href="/hornets">黄蜂</a></td>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>20%</td>
+                                <td>3.5</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="btnbb">
+                <a href="制作过程.pdf"><input type="button"value="点击获取实验报告"></a>
+            </div>
+
+        </div>
+        <div class="ch"></div>
+        <div class="west-side"><a href="">
+            <img src="images/微信截图_20191017223221.png" alt=""></a>
+        </div>
+
+
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>
+
+<!--<div class="buttom">-->
+<!--    <div class="buttom1">-->
+<!--        <div class="tab-about">-->
+<!--            <span>关于</span>-->
+<!--            <a href="">NBA Store</a>-->
+<!--            <a href="">NBA就职机会</a>-->
+<!--        </div>-->
+<!--        <div class="tab-event">-->
+<!--            <span>赛事</span>-->
+<!--            <a href="">全明星赛</a>-->
+<!--            <a href="">2015Jr.NBA高中赛</a>-->
+<!--        </div>-->
+<!--        <div class="tab-topic">-->
+<!--            <span>专题</span>-->
+<!--            <a href="">2016休赛期转会</a>-->
+<!--            <a href="">2016选秀大会</a>-->
+<!--            <a href="">联盟的骄傲</a>-->
+<!--            <a href="">新春贺岁</a>-->
+<!--            <a href="">扣响盛夏</a>-->
+<!--        </div>-->
+<!--        <div class="tab-history">-->
+<!--            <span>NBA101</span>-->
+<!--            <a href="">编年史</a>-->
+<!--            <a href="">50大球星</a>-->
+<!--            <a href="">NBA知识Q&amp;A</a>-->
+<!--        </div>-->
+<!--        <div class="tab-app">-->
+<!--            <span>手机看比赛 下载APP</span>-->
+<!--            <img src="images/erweima.png">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="buttom2">-->
+<!--        <p><em>©</em>2018年著作权 NBA 中国所有权。</p>-->
+<!--        <p><a target="_blank" href="">NBA.com/China</a>上除去<a target="_blank" href="http://nbachina.qq.com/a/20150623/047888.htm">使用条款</a>中所特别提及的部分之外，其它任何内容都不得以任何形式被复制、再传播，或篡改。</p>-->
+<!--        <p>进入<a target="_blank" href="">NBA.com/China</a>后，即表示阁下同意遵守<a target="_blank" href="https://china.nba.com/">NBA.com/China</a>的<a target="_blank" href="http://nbachina.qq.com/a/20150623/047968.htm">隐私政策</a>和<a target="_blank" href="">使用条款</a>。</p>-->
+<!--        <p>有任何的建议和意见，都欢迎联络我们：<a href="">NBAChinaInfo@nba.com</a></p>-->
+<!--        <p>有关NBA商品授权合作事宜，敬请联系:<a href="">GMGChinaBusinessInquiry@nba.com</a></p>-->
+<!--    </div>-->
+
+
+<!--    </div>-->
+</div>
+
+</body>
+</html>
